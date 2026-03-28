@@ -435,6 +435,8 @@
   letter-spacing: 2px;
 }
 
+.star-blue { color: #1a8cff; }
+
 .testimonial-text {
   height: 12px;
   background: #e8e8e8;
@@ -443,6 +445,12 @@
 }
 
 .testimonial-text.short { width: 60%; }
+
+.testimonial-review {
+  font-size: 0.92rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
 
 .testimonial-author {
   display: flex;
@@ -463,11 +471,10 @@
 
 .author-name {
   display: block;
-  height: 13px;
-  background: #ddd;
-  border-radius: 4px;
-  width: 110px;
-  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.2rem;
 }
 
 .author-location {

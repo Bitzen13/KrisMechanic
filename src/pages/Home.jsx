@@ -1,4 +1,5 @@
 import './Home.css'
+import { PHONE_RAW, PHONE_DISPLAY, EMAIL } from '../contact'
 
 export default function Home() {
   return (
@@ -16,29 +17,29 @@ export default function Home() {
           <p className="hero-subtitle">No Tow Truck, No Hassle.</p>
 
           <div className="hero-contact">
-            <a href="tel:0000000000" className="hero-contact-item">
+            <a href={`tel:${PHONE_RAW}`} className="hero-contact-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.1 1.17 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
               </svg>
               <span className="hero-contact-label">Call</span>
-              <span className="hero-contact-value">(000) 000-0000</span>
+              <span className="hero-contact-value">{PHONE_DISPLAY}</span>
             </a>
             <div className="hero-contact-divider" />
-            <a href="sms:0000000000" className="hero-contact-item">
+            <a href={`sms:${PHONE_RAW}`} className="hero-contact-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
               </svg>
               <span className="hero-contact-label">Text</span>
-              <span className="hero-contact-value">(000) 000-0000</span>
+              <span className="hero-contact-value">{PHONE_DISPLAY}</span>
             </a>
             <div className="hero-contact-divider" />
-            <a href="mailto:kris@krismechanic.ca" className="hero-contact-item">
+            <a href={`mailto:${EMAIL}`} className="hero-contact-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
               <span className="hero-contact-label">Email</span>
-              <span className="hero-contact-value">kris@krismechanic.ca</span>
+              <span className="hero-contact-value">{EMAIL}</span>
             </a>
             <div className="hero-contact-divider" />
             {/* <a href="/book-online" className="hero-contact-item hero-contact-book">
@@ -82,21 +83,21 @@ export default function Home() {
           </div>
           <div className="section-divider" />
           <div className="testimonials-grid">
-            {[0, 1, 2].map(i => (
-              <div className="testimonial-card" key={i}>
-                <div className="stars">★★★★★</div>
-                <p className="testimonial-text" />
-                <p className="testimonial-text" />
-                <p className="testimonial-text short" />
-                <div className="testimonial-author">
-                  <div className="author-avatar" />
-                  <div>
-                    <span className="author-name" />
-                    <span className="author-location" />
-                  </div>
-                </div>
-              </div>
-            ))}
+            <div className="testimonial-card">
+              <span className="author-name">Simon Long</span>
+              <div className="stars">★★★★★</div>
+              <p className="testimonial-review">Kris saved me from a no-start situation! Engine was in pretty bad shape but he got it all sorted. 10/10 recommend ⭐️</p>
+            </div>
+            <div className="testimonial-card">
+              <span className="author-name">Brandon Marcotte</span>
+              <div className="stars">★★★★★<span className="star-blue">★</span></div>
+              <p className="testimonial-review">Had Kris back today, he rewired my headlight and secured it (all the tabs were broken off and connector completely severed) and rewired my backup cam, plus bled my brakes for me, all in 2 hours, this man means business! Mad respect, (a shop would have kept the truck for 3 days and said it took 12 hours at double the rate, this man’s services are 110% worth it.)</p>
+            </div>
+            <div className="testimonial-card">
+              <span className="author-name">Name</span>
+              <div className="stars">★★★★★</div>
+              <p className="testimonial-review">Review text here.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -108,13 +109,13 @@ export default function Home() {
             <h2 className="bottom-contact-title">Stuck on the side of the road?</h2>
           </div>
           <div className="bottom-contact-actions">
-            <a href="tel:0000000000" className="btn-dark">
+            <a href={`tel:${PHONE_RAW}`} className="btn-dark">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.1 1.17 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
               </svg>
-              (000) 000-0000
+              {PHONE_DISPLAY}
             </a>
-            <a href="sms:0000000000" className="btn-outline-dark">Text Me!</a>
+            <a href={`sms:${PHONE_RAW}`} className="btn-outline-dark">Text Me!</a>
           </div>
         </div>
       </section>
@@ -128,20 +129,10 @@ export default function Home() {
             <p className="footer-tagline short" />
           </div>
           <div className="footer-col">
-            <h4>Navigate</h4>
-            <ul>
-              {['About', 'Services', 'Reviews', 'Contact'].map(item => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase()}`}>{item}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="footer-col">
             <h4>Contact</h4>
             <ul>
-              <li>(000) 000-0000</li>
-              <li>kris@krismechanic.ca</li>
+              <li>{PHONE_DISPLAY}</li>
+              <li>{EMAIL}</li>
             </ul>
           </div>
         </div>

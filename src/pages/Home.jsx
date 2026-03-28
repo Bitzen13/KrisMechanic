@@ -11,7 +11,7 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-availability">
             <span className="pulse-dot" />
-            Available 24/7
+            Mobile Mechanic
           </div>
           <h1 className="hero-title">Your Car’s Broken. I Fix It.</h1>
           <p className="hero-subtitle">No Tow Truck, No Hassle.</p>

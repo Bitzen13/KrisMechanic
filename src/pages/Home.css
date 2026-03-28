@@ -576,7 +576,30 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-fb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  transition: background 0.2s, color 0.2s;
+}
+
+.footer-fb:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.footer-fb svg {
+  width: 15px;
+  height: 15px;
 }
 
 .footer-tagline {

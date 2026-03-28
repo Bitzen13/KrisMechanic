@@ -137,5 +137,6 @@
   .navbar-cta button {
     background: none !important;
     color: var(--accent) !important;
+    padding: 1rem 2rem !important;
   }
 }

@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="navbar-inner">
         <div className="navbar-logo" onClick={() => { close(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
           <img src={TruckLogo} alt="KrisMechanic logo" className="navbar-logo-img" />
-          Hoytsheightworks
+          HHW Mechanical
         </div>
 
         <button

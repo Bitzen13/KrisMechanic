@@ -94,9 +94,9 @@ export default function Home() {
               <p className="testimonial-review">Had Kris back today, he rewired my headlight and secured it (all the tabs were broken off and connector completely severed) and rewired my backup cam, plus bled my brakes for me, all in 2 hours, this man means business! Mad respect, (a shop would have kept the truck for 3 days and said it took 12 hours at double the rate, this man’s services are 110% worth it.)</p>
             </div>
             <div className="testimonial-card">
-              <span className="author-name">Name</span>
+              <span className="author-name">Mike</span>
               <div className="stars">★★★★★</div>
-              <p className="testimonial-review">Review text here.</p>
+              <p className="testimonial-review">I've had Kris come to work on my car a couple times. Little to no wait time to get me back on the road. Always professional work and affordable price, would highly recommend</p>
             </div>
           </div>
         </div>

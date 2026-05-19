@@ -124,7 +124,7 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-inner">
           <div className="footer-brand">
-            <div className="footer-logo">Hoyts Height Works.</div>
+            <div className="footer-logo">HHW Mechanical</div>
             <a href="https://www.facebook.com/kristopher.hoyt.2025/" className="footer-fb" target="_blank" rel="noreferrer" aria-label="Facebook">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()}Hoyts Height Works. All rights reserved.</span>
+          <span>© {new Date().getFullYear()}HHW Mechanical All rights reserved.</span>
         </div>
       </footer>
 
